@@ -391,7 +391,7 @@ body {
 
 	overflow: visible;
 	z-index: 1;
-	text-align: center;
+	text-align: left;
 	perspective: 600px;
 	perspective-origin: 50% 40%;
 }
@@ -404,9 +404,7 @@ body {
 .reveal .slides>section>section {
 	display: none;
 	position: absolute;
-	width: 100%;
 	padding: 20px 0px;
-
 	z-index: 10;
 	transform-style: preserve-3d;
 	transition: transform-origin 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985),
