@@ -36,21 +36,29 @@ body {
   font-size: 36px;
   font-weight: normal;
   color: #eee;
+  height: 100vh !important;
+  width: 100vw !important;
   
   .slides {
-    height: 100vh !important;
-    width: 100vw !important;
-    top: 50% !important;
-    bottom: 0 !important;
-    margin-top: 0;
-    box-sizing: border-box;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0 !important;
+    bottom: auto !important;
+    left: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    transform: none !important;
+    zoom: 0 !important;
+    padding: 0px;
     
     section {
-      width: calc(100% - 100px);
-      height: calc(100% - 100px);
+      width: 100% !important;
+      height: 100% !important;
+      top: 0 !important;
       box-sizing: border-box;
-      top: 50px !important;
-      left: 50px !important;
+      margin: 0 !important;
+      left: 0 !important;
     }
   }
 }
@@ -58,7 +66,8 @@ body {
 ::selection {
   color: #fff;
   background: #a23;
-  text-shadow: none; }
+  text-shadow: none; 
+}
 
 .reveal .slides > section,
 .reveal .slides > section > section {
@@ -110,17 +119,17 @@ body {
     color: #FFD556;
     font-size: 3em;
     margin-left: -10px;
-    line-height: 0.8;
   }
 }
 
 #title-slide {
+  
   h1 {
     font-size: 80px;
     position: absolute;
-    left: 20px;
-    bottom: 0px;
     width: 800px;
+    bottom: 40px;
+    left: 80px;
   }
 }
 
