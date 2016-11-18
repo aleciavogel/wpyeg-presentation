@@ -140,6 +140,8 @@ body {
     left: 50%;
     @include transform(translateX(-50%) translateY(-50%));
     width: 100%;
+    box-sizing: border-box;
+    padding: 0px 80px;
   }
 
 #title {
@@ -178,6 +180,57 @@ body {
   }
 }
 
+#ideas {
+  p {
+    margin-bottom: 50px;
+  }
+  #p2 {
+    text-align: center;
+  }
+  #p3 {
+    text-align: right;
+  }
+}
+
+#hit-the-wall {
+  text-align: center;
+
+  img {
+    border: none;
+    width: 75%;
+  }
+}
+
+#big-decision {
+  span {
+    font-family: "Montserrat", "sans-serif";
+    color: $yellow;
+    font-weight: 700;
+    font-size: 2em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+  }
+
+  .content {
+    text-align: center;
+    transform: none;
+    left: 0;
+    top: auto;
+    bottom: 100px;
+  }
+
+  ul {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
 .circle-img {
   height: 400px;
   width: 400px;
@@ -212,7 +265,12 @@ body {
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0 0 0 1em; }
+  margin: 0 0 0 1em; 
+
+  li {
+    margin-bottom: 20px;
+  }
+}
 
 .reveal ol {
   list-style-type: decimal; }
@@ -348,7 +406,6 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eee;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {

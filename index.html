@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Finding Your Niche | Alecia Vogel</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/blue_city.css">
@@ -39,6 +39,33 @@
 					<h2>So, you want to build a website...</h2>
 					<span class="fragment">...now what?</span>
 				</section>
+				<section id="ideas">
+					<div class="content">
+						<p id="p1">You're all signed up for a WordPress account,</p>
+						<p id="p2" class="fragment">you've picked out a theme and installed some plugins,</p>
+						<p id="p3" class="fragment">you've already tweeted that you're starting a blog...</p>
+					</div>
+				</section>
+
+				<section id="hit-the-wall">
+					<div class="content">
+						<img src="lib/img/hit_the_wall.gif" class="animated-gif">
+					</div>
+				</section>
+
+				<section id="big-decision">
+					<h2>It's a big decision.</h2>
+					<div class="content">
+						<ul>
+							<li class="fragment">The topic you choose will affect how you design your blog.</li>
+							<li class="fragment">You want to stand out.</li>
+							<li class="fragment">It's hard to narrow your blog down to just one thing.</li>
+							<li class="fragment">"It's all been said/done before."</li>
+							<li class="fragment">What do you have going on that others will want to read about?</li>
+						</ul><br>
+						<img src="lib/img/talk_to_food.gif" class="fragment animated-gif">
+					</div>
+				</section>
 			</div>
 		</div>
 
@@ -58,6 +85,40 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+
+			$(function () {
+			    // on page load  replace all src URLs
+
+			    $('.animated-gif').each(function (i, e) {
+			        disableGif(e)
+			    });
+			});
+			Reveal.addEventListener('slidechanged', initAnimatedGifs);
+			Reveal.addEventListener('ready', initAnimatedGifs);
+
+			function initAnimatedGifs(event) {
+			    $('.animated-gif', event.currentSlide).each(function (i, e) {
+			        enableGif(e)
+			    });
+
+			    if (event.previousSlide)
+			        $('.animated-gif', event.previousSlide).each(function (i, e) {
+			            disableGif(e)
+
+			        });
+			}
+
+			function enableGif(e) {
+			    var src = $(e).attr("src")
+			    $(e).attr('src', src.replace('-image.gif', '.gif'));
+
+
+			}
+			function disableGif(e) {
+			    var src = $(e).attr("src")
+			    $(e).attr('src', src.replace('.gif', '-image.gif'));
+
+			}
 		</script>
 	</body>
 </html>
