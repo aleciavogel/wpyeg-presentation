@@ -11,6 +11,9 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,400i,700,700i');
 @import '../bourbon/bourbon';
+
+$yellow: #FFD556;
+$blue: #028FFB;
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -96,7 +99,6 @@ body {
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
-  // text-shadow: 2px 2px 2px #222;
   word-wrap: break-word; }
 
 .reveal h1 {
