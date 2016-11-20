@@ -61,6 +61,8 @@ body {
       padding: 80px 90px; }
       .reveal .slides section strong {
         color: #FFD556; }
+      .reveal .slides section section {
+        padding: 80px 90px; }
 
 ::selection {
   color: #fff;
@@ -193,6 +195,38 @@ body {
   text-align: left;
   margin-bottom: 20px;
   margin-left: 0; }
+
+#two-types div {
+  width: 50%;
+  float: left;
+  text-align: left; }
+  #two-types div p {
+    text-align: center; }
+  #two-types div:last-child {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 100px;
+    text-align: right;
+    width: 45%; }
+#two-types h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  width: 100%; }
+#two-types h3 {
+  font-size: 2em;
+  text-align: center; }
 
 .circle-img {
   height: 400px;
