@@ -202,6 +202,15 @@ body {
   text-align: left; }
   #two-types div p {
     text-align: center; }
+  #two-types div h2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
   #two-types div:last-child {
     position: absolute;
     top: 50%;
@@ -213,6 +222,11 @@ body {
     right: 100px;
     text-align: right;
     width: 45%; }
+  #two-types div.center {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    right: auto; }
 #two-types h2 {
   position: absolute;
   top: 50%;
@@ -228,11 +242,67 @@ body {
   font-size: 2em;
   text-align: center; }
 
+#check-competition div.left {
+  width: 48%;
+  float: left; }
+#check-competition div.right {
+  width: 48%;
+  float: right; }
+#check-competition h4 {
+  margin-top: 50px; }
+
+#start-blogging blockquote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  margin: 0; }
+
+#thank-you img.circle-img {
+  left: 120px;
+  position: absolute;
+  bottom: 100px; }
+#thank-you img.logo {
+  background: none;
+  border: none;
+  box-shadow: none;
+  max-height: 100px;
+  display: inline-block;
+  max-width: 115px; }
+#thank-you #social-media {
+  position: absolute;
+  bottom: 200px;
+  right: 10vw; }
+#thank-you .handle {
+  text-align: center;
+  display: inline-block;
+  margin-right: 50px; }
+  #thank-you .handle:last-child {
+    margin-right: 0px; }
+
 .circle-img {
   height: 400px;
   width: 400px;
   border: 5px solid #fff !important;
   border-radius: 100%; }
+
+.step-slide {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  left: 0; }
+  .step-slide h2 {
+    text-align: center; }
 
 /*********************************************
  * OTHER
@@ -302,8 +372,10 @@ body {
   margin: 20px auto;
   padding: 5px;
   font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+  border-left: solid 4px #FFD556;
+  padding: 20px 0px 20px 20px; }
+  .reveal blockquote cite {
+    font-weight: 700; }
 
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
@@ -379,14 +451,14 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #a23;
+  color: #FFD556;
   text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease; }
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out; }
 
 .reveal a:hover {
-  color: #dd5566;
+  color: #015596;
   text-shadow: none;
   border: none; }
 
