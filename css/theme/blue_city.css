@@ -133,9 +133,9 @@ body {
   padding: 0px 80px; }
 
 #title h1 {
-  font-size: 80px;
+  font-size: calc(1em + 3vw) !important;
   position: absolute;
-  width: 800px;
+  width: 100%;
   bottom: 55px;
   left: 80px; }
 
@@ -152,7 +152,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #FFD556;
     font-weight: 700;
-    font-size: 7em;
+    font-size: calc(1em + 10vw);
     text-align: right;
     display: block;
     position: absolute;
@@ -184,17 +184,21 @@ body {
   position: absolute;
   bottom: 80px;
   left: 0; }
+#big-decision h2 {
+  margin-bottom: 10px; }
 #big-decision .content {
-  text-align: center;
+  padding-left: 150px;
   transform: none;
   left: 0;
   top: auto;
-  bottom: 100px; }
+  text-align: center; }
 #big-decision ul {
   display: inline-block;
   text-align: left;
-  margin-bottom: 20px;
-  margin-left: 0; }
+  margin-bottom: 0px;
+  margin-left: 0;
+  width: 100%;
+  padding: 0; }
 
 #two-types div {
   width: 50%;

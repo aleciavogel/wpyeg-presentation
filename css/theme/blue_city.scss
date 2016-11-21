@@ -106,7 +106,8 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 3.77em; 
+}
 
 .reveal h2 {
   font-size: 2.75em; 
@@ -150,9 +151,9 @@ body {
 
 #title {
   h1 {
-    font-size: 80px;
+    font-size: calc(1em + 3vw) !important;
     position: absolute;
-    width: 800px;
+    width: 100%;
     bottom: 55px;
     left: 80px;
   }
@@ -174,7 +175,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #FFD556;
     font-weight: 700;
-    font-size: 7em;
+    font-size: calc(1em + 10vw);
     text-align: right;
     display: block;
     position: absolute;
@@ -219,19 +220,25 @@ body {
     left: 0;
   }
 
+  h2 {
+    margin-bottom: 10px;
+  }
+
   .content {
-    text-align: center;
+    padding-left: 150px;
     transform: none;
     left: 0;
     top: auto;
-    bottom: 100px;
+    text-align: center;
   }
 
   ul {
     display: inline-block;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 0;
+    width: 100%;
+    padding: 0;
   }
 }
 
